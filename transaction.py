@@ -5,10 +5,10 @@ class Transaction:
 
   def __init__(self):
     self.date = ""
-    self.customer_start_rental = ""
+    self.customer_start_rental = 0
     self.customer_name = ""
-    self.lane_number = ""
-    self.customer_end_rental = ""
+    self.lane_number = 0
+    self.customer_end_rental = 0
 
   def set_name(self, name: str) -> None:
     """
@@ -16,17 +16,35 @@ class Transaction:
       """
     self.customer_name = name
 
+  def get_name(self) -> str:
+    """
+    Retrieves the name of the customer.
+    """
+    return self.customer_name
+
   def set_lane_start_time(self, time: int) -> None:
     """
       Sets the start time for the customer's lane.
       """
     self.customer_start_rental = time
 
+  def set_lane_number(self, number: int) -> None:
+    """
+    Assigns the lane number to the customer.
+    """
+    self.lane_number = number
+
   def get_lane(self, lane_number: int) -> int:
     """
       Retrieves the lane number assigned to the customer.
       """
     return self.lane_number
+
+  def get_start_time(self) -> int:
+    """
+    Retrieves the start time for the customer's lane.
+    """
+    return self.customer_start_rental
 
   def get_date(self) -> str:
     """
@@ -39,3 +57,9 @@ class Transaction:
       Sets the end time for the customer's lane.
       """
     self.customer_end_rental = time
+
+  def get_end_time(self) -> int:
+    """
+    Retrieves the end time for the customer's lane.
+    """
+    return self.customer_end_rental
