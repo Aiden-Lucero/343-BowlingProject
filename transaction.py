@@ -1,4 +1,4 @@
-class Transaction:
+class Transaction: 
   """
   Represents a transaction for renting a lane.
   """
@@ -22,7 +22,7 @@ class Transaction:
     """
     return self.customer_name
 
-  def set_lane_start_time(self, time: int) -> None:
+  def set_start_time(self, time: int) -> None:
     """
       Sets the start time for the customer's lane.
       """
@@ -33,8 +33,8 @@ class Transaction:
     Assigns the lane number to the customer.
     """
     self.lane_number = number
-
-  def get_lane(self, lane_number: int) -> int:
+  
+  def get_lane_number(self) -> int:
     """
       Retrieves the lane number assigned to the customer.
       """
@@ -46,13 +46,19 @@ class Transaction:
     """
     return self.customer_start_rental
 
+  def set_date(self, date: str) -> None:
+    """
+    Sets the date of the transaction.
+    """ 
+    self.date = date
+  
   def get_date(self) -> str:
     """
       Retrieves the date of the transaction.
       """
     return self.date
 
-  def set_lane_end_time(self, time: int) -> None:
+  def set_end_time(self, time: int) -> None:
     """
       Sets the end time for the customer's lane.
       """

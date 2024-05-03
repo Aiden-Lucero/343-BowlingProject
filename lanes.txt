@@ -1,0 +1,10 @@
+Lane1 - 10.0
+Lane1 - 10.0
+Lane1 - 15.0
+Lane1 - 15.0
+Lane1 - 20.0
+Lane30 - 15.0
+Lane30 - 15.0
+Lane22 - 10.0
+Lane22 - 10.0
+Lane22 - 10.0

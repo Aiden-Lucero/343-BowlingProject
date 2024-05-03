@@ -25,3 +25,9 @@ class DailyTotal:
       """
       return self.total_amount
 
+  def get_date(self) -> str:
+      """
+      Retrieves the date of the transaction.
+      """
+      return self.date
+
